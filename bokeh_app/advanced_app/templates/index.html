@@ -1,0 +1,89 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+{% extends base %}
+
+{% block postamble %}
+  <style>
+    h1 {
+      margin: 2em 0 0 0;
+      color: #2e484c;
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: 1.4em;
+      text-transform: uppercase;
+    }
+    p {
+      font: "Libre Baskerville", sans-serif;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    div.bk-widget-box.bk-layout-fixed.hidden {
+      display: none;
+    }
+    .color select option:nth-child(1) { color: #3182bd; }
+    .color select option:nth-child(2) { color: #6baed6; }
+    .color select option:nth-child(3) { color: #9ecae1; }
+    .color select option:nth-child(4) { color: #c6dbef; }
+    .color select option:nth-child(5) { color: #e6550d; }
+    .color select option:nth-child(6) { color: #fd8d3c; }
+    .color select option:nth-child(7) { color: #fdae6b; }
+    .color select option:nth-child(8) { color: #fdd0a2; }
+    .color select option:nth-child(9) { color: #31a354; }
+    .color select option:nth-child(10) { color: #74c476; }
+    .color select option:nth-child(11) { color: #a1d99b; }
+    .color select option:nth-child(12) { color: #c7e9c0; }
+    .color select option:nth-child(13) { color: #756bb1; }
+    .color select option:nth-child(14) { color: #9e9ac8; }
+    .color select option:nth-child(15) { color: #bcbddc; }
+    .color select option:nth-child(16) { color: #dadaeb; }
+    .color select option:nth-child(17) { color: #636363; }
+    .color select option:nth-child(18) { color: #969696; }
+    .color select option:nth-child(19) { color: #bdbdbd; }
+    .color select option:nth-child(20) { color: #d9d9d9; }
+    .pick_color select option:nth-child(1) { color: #3182bd; }
+    .pick_color select option:nth-child(2) { color: #6baed6; }
+    .pick_color select option:nth-child(3) { color: #9ecae1; }
+    .pick_color select option:nth-child(4) { color: #c6dbef; }
+    .pick_color select option:nth-child(5) { color: #e6550d; }
+    .pick_color select option:nth-child(6) { color: #fd8d3c; }
+    .pick_color select option:nth-child(7) { color: #fdae6b; }
+    .pick_color select option:nth-child(8) { color: #fdd0a2; }
+    .pick_color select option:nth-child(9) { color: #31a354; }
+    .pick_color select option:nth-child(10) { color: #74c476; }
+    .pick_color select option:nth-child(11) { color: #a1d99b; }
+    .pick_color select option:nth-child(12) { color: #c7e9c0; }
+    .pick_color select option:nth-child(13) { color: #756bb1; }
+    .pick_color select option:nth-child(14) { color: #9e9ac8; }
+    .pick_color select option:nth-child(15) { color: #bcbddc; }
+    .pick_color select option:nth-child(16) { color: #dadaeb; }
+    .pick_color select option:nth-child(17) { color: #636363; }
+    .pick_color select option:nth-child(18) { color: #969696; }
+    .pick_color select option:nth-child(19) { color: #bdbdbd; }
+    .pick_color select option:nth-child(20) { color: #d9d9d9; }
+    .color_0 select { color: #3182bd; }
+    .color_1 select { color: #6baed6; }
+    .color_2 select { color: #9ecae1; }
+    .color_3 select { color: #c6dbef; }
+    .color_4 select { color: #e6550d; }
+    .color_5 select { color: #fd8d3c; }
+    .color_6 select { color: #fdae6b; }
+    .color_7 select { color: #fdd0a2; }
+    .color_8 select { color: #31a354; }
+    .color_9  select { color: #74c476; }
+    .color_10 select { color: #a1d99b; }
+    .color_11 select { color: #c7e9c0; }
+    .color_12 select { color: #756bb1; }
+    .color_13 select { color: #9e9ac8; }
+    .color_14 select { color: #bcbddc; }
+    .color_15 select { color: #dadaeb; }
+    .color_16 select { color: #636363; }
+    .color_17 select { color: #969696; }
+    .color_18 select { color: #bdbdbd; }
+    .color_19 select { color: #d9d9d9; }
+
+  </style>
+{% endblock %}
+
+{% block contents %}
+  {{ super() }}
+{% endblock %}
