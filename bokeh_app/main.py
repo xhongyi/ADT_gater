@@ -18,7 +18,7 @@ from scipy.io import mmread
 import pdb;
 
 # Set data dir
-data_path = "/large_data/SingleCellData/"
+data_path = "/home/hxin/workspace/ADT_gater/"
 #data_path = "/large_data/SingleCellData/GMM-Demux-input/"
 
 # Call back functions
@@ -192,6 +192,9 @@ class FlowPlot:
     def addColorBar(self, color_bar):
         self.p.add_layout(color_bar, 'right')
 
+######################
+# Main function part #
+######################
 
 # Parsing arguments
 args = curdoc().session_context.request.arguments
@@ -234,9 +237,11 @@ try:
     data_dir = args.get('dir')[0].decode("utf-8") + '/'
     print("data_dir is: ", data_dir)
 except:
-    data_dir = "CITE-1/" 
+    data_dir = "" 
 
-
+#################
+# Loading files #
+#################
 
 # Stop if there is any error in loading
 loading_error = False
@@ -271,6 +276,10 @@ if color_file is not None:
     except:
         print("except in color!")
         loading_error = True
+
+###############
+# Draw canvas #
+###############
 
 # Stop if error
 if not loading_error:
